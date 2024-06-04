@@ -8,8 +8,6 @@ function solution(arr, divisor) {
     if (answer.length === 0) {
         return [-1];
     }
-    answer.sort(function (a, b) {
-        return a - b;
-    })
+    answer.sort((a, b) => a - b);
     return answer;
 }
