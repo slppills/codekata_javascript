@@ -1,7 +1,3 @@
 function solution(s) {
-    if (s.length % 2 !== 0) {
-        return s[parseInt(s.length / 2)];
-    } else {
-        return s[(s.length / 2) - 1] + s[s.length / 2];
-    }
+    return s.length % 2 === 0 ? s.slice(s.length / 2 - 1, s.length / 2 + 1) : s[Math.floor(s.length / 2)]; 
 }
