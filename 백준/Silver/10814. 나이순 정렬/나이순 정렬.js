@@ -8,4 +8,5 @@ for (let i=1; i<=N; i++) {
 }
 
 arr.sort((a, b) => a[0] - b[0]);
-arr.forEach(([age, name]) => console.log(age, name));
+const result = arr.map(([age, name]) => `${age} ${name}`).join("\n");
+console.log(result);
